@@ -1,64 +1,84 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-  <title>Pomodoro Clock</title>
-  <meta charset="utf-80">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="author" content="yadavanuj1996">
-  <meta name="description" content="This is a clock timer based on the Pomodromo Technique.The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. The technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks">
-  <meta keywords="pomodromo clock,clock,timer,alarm">
-       <!-- Font-Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"  integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-   
-  
+	<title>Pomodoro Clock</title>
+	<meta charset="utf-80">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="author" content="yadavanuj1996">
+	<meta name="description"
+		content="This is a clock timer based on the Pomodromo Technique.The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s. The technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks">
+	<meta keywords="pomodromo clock,clock,timer,alarm">
+	<!-- Font-Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+		integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
 </head>
+
 <body>
-  <div class="container" id="main-container">
-    <h1 class="text-center">Pomodoro Clock</h1>
-    <div id="labels" class="row">
-      <div class="col col-6">
-        <div class="row justify-content-center align-items-center">
-          <p id="break-label" class="text-right">Break Length</p>
-          <div class="w-100"></div>
-          <i id="break-increment" class="fas fa-chevron-circle-up"></i>
-          <div class="w-100"></div>
-          <p id="break-length">5</p>
-          <div class="w-100"></div>
-          <i id="break-decrement" class="fas fa-chevron-circle-down"></i>
-        </div>
-      </div>
-      <div class="col col-6">
-        <div class="row justify-content-center align-items-center">
-          <p id="session-label" class="text-right">Session Length</p>
-          <div class="w-100"></div>
-          <i id="session-increment" class="fas fa-chevron-circle-up"></i>
-          <div class="w-100"></div>
-          <p id="session-length">25</p>
-          <div class="w-100"></div>
-          <i id="session-decrement" class="fas fa-chevron-circle-down"></i>
-        </div>
-      </div>
-    </div>
-    <div id="timer-details" class="row jusitfy-content-center align-items-center">
-      <div class="col col-12">
-        <div id="timer-label" class="row justify-content-center align-items-center">
-          <p id="timer-label-heading">Session
-            </>
-            <div class="w-100"></div>
-            <div id="time-left-div">
-              <p id="time-left">25:00</p>
+	<div class="container" id="main-container">
+		<h1 class="text-center">Pomodoro Clock</h1>
+		<div id="labels" class="row">
+			<div class="col col-6">
+				<div class="row justify-content-center align-items-center">
+					<p id="break-label" class="text-right">Break Length</p>
+					<div class="w-100"></div>
+					<i id="break-increment" class="fas fa-chevron-circle-up"></i>
+					<div class="w-100"></div>
+					<p id="break-length">5</p>
+					<div class="w-100"></div>
+					<i id="break-decrement" class="fas fa-chevron-circle-down"></i>
+				</div>
+			</div>
+			<div class="col col-6">
+				<div class="row justify-content-center align-items-center">
+					<p id="session-label" class="text-right">Session Length</p>
+					<div class="w-100"></div>
+					<i id="session-increment" class="fas fa-chevron-circle-up"></i>
+					<div class="w-100"></div>
+					<p id="session-length">25</p>
+					<div class="w-100"></div>
+					<i id="session-decrement" class="fas fa-chevron-circle-down"></i>
+				</div>
+			</div>
+		</div>
+		<div id="timer-details" class="row align-items-center justify-content-center">
+			<div id="main-content-div" class="col-10 col-sm-10 col-md-6">
+				<div id="timer-label" class="row no-gutters justify-content-center align-items-center">
+					<p id="timer-label-heading">Session
+						</p>
+						<div class="w-100"></div>
+            <div class="col-8 row" id="clock-top-elements">
+              <div class="col-2 clock-top-element"></div>
+              <div class="col-2 clock-top-element"></div>
             </div>
             <div class="w-100"></div>
-            <i id="start_stop" class="fas fa-play-circle"></i>
-            <i id="reset" class="fas fa-power-off"></i>
-        </div>
-      </div>
-    </div>
-  <audio id="beep" style="display:none" controls>
-    <source type="audio/mp3" src="https://raw.githubusercontent.com/yadavanuj1996/country-finder-game/master/src/audio/correct.mp3">
-  </audio>
-  
-  </div>
+            <div id="time-left-outer-div" class="col-8 row justify-content-center align-items-center">
+              <div id="time-left-div" class="col-12">
+                <p id="time-left">25:00</p>
+                <div class="w-100"></div>
+						<i id="start_stop" class="fas fa-play-circle"></i>
+						<i id="reset" class="fas fa-power-off"></i>
+              </div>
+            </div>
+            <div class="col-10" id="clock-bottom-elements">
+              <div class="col-12 row justify-content-center align-items-center">
+                <div class="col-2 offset-2 clock-bottom-element"></div>
+                <div class="col-2 offset-4 clock-bottom-element"></div>
+              </div>
+            </div>
+            <div class="w-100"></div>
+            <!-- <div class="col-10" id="drawer"></div> -->
+				</div>
+			</div>
+		</div>
+		<audio id="beep" style="display:none" controls>
+			<source type="audio/mp3"
+				src="https://raw.githubusercontent.com/yadavanuj1996/country-finder-game/master/src/audio/correct.mp3">
+		</audio>
+
+	</div>
 </body>
 
 </html>

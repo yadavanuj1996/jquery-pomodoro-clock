@@ -8,7 +8,38 @@ i {
 #break-length {
   margin: 2px 0 2px 0;
 }
-#time-left-div{
- 
+#main-content-div{
+  //border: 2px solid red;
 }
-
+.clock-top-element{
+  background-color: #393D45;
+  height: 5px;
+  margin-left: 8px;
+}
+.clock-bottom-element{
+  background-color: #393D45;
+  height: 5px;
+}
+#time-left-outer-div{
+  background-color: #393D45;
+  border: 2px solid #202930;
+  border-radius: 5px; 
+  padding: 5px 8px 5px 8px !important;
+}
+#time-left-div{
+  background-color: #91BCCB;
+  border: 2px solid #202930;
+  border-radius: 5px;  
+  text-align: center;
+}
+#time-left{
+  margin: 2px;
+}
+.no-margin{
+  margin: 0 !important;
+}
+/*#drawer{
+  background-color: #60646F;
+  height: 200px;
+  border: 4px solid #231F20;
+}*/
