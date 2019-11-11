@@ -1,3 +1,7 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import $ from 'jquery'; 
+import "./style.scss";
+
 $(document).ready(() => {
   var state = "off";
   var interval,
