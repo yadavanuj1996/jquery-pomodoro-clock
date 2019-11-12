@@ -26,14 +26,25 @@ i {
   margin-left: 8px;
   margin-bottom: 4px; 
 }
+.button-press-anim{
+  animation-name: button-press;
+  animation-iteration-count:1;
+  animation-duration: 1s;
+}
+@keyframes button-press{
+  50%{
+    height: 0px;
+  }
+}
 #session-length {
   margin: 2px 0 2px 0;
 }
 #break-length {
   margin: 2px 0 2px 0;
 }
-#main-content-div{
-  //border: 2px solid red;
+#timer-label-heading{
+  font-size: 15px;
+  font-weight: bold;
 }
 .clock-top-element{
   background-color: #393D45;
