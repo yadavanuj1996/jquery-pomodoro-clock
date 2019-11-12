@@ -50,7 +50,6 @@ $(document).ready(() => {
       $("#top-element-1").removeClass("button-press-anim");
     }
     let isResetAlreadyDone= $('#top-element-2').hasClass('button-press-anim');
-    console.log(isResetAlreadyDone);
     if(isResetAlreadyDone===true){
      document.getElementById("top-element-2").classList.remove("button-press-anim");
      // the re adding of class has to be done after a moment
